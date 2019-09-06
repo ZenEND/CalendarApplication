@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.ReactModal__Overlay {
+  background: none !important;
+  position: static !important; }
+
+.ReactModal__Content {
+  border: none !important;
+  background: none !important;
+  position: static !important; }
+
+.main {
+  display: flex; }
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #0000001A 0% 0% no-repeat padding-box;
+  line-height: 21px;
+  letter-spacing: 3px;
+  padding-left: 40px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Source Sans Pro,Bold; }
+
+.sidebar {
+  width: 20%;
+  background-color: #43425c;
+  color: white;
+  position: fixed;
+  height: 100vh; }
+
+.content {
+  margin-left: 20%;
+  width: 80%; }
+
+.calendar {
+  margin-top: 50px; }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%; }
+
+.list button {
+  display: flex;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  margin: 7px 5px;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 5px;
+  height: 40px;
+  font-weight: 300; }
+  .list button:hover {
+    background: #0000001A 0% 0% no-repeat padding-box;
+    transition: .3s; }
+
+.list i {
+  margin-top: -3px;
+  margin-right: 10px;
+  margin-left: 50px;
+  color: #A5A4BF; }
+
+.current-window {
+  font-size: 28px;
+  margin-top: 100px;
+  margin-left: 5%;
+  color: #43425D; }
+
+.top-bar {
+  height: 70px;
+  width: 100%;
+  background: white;
+  position: fixed;
+  display: flex; }
+  .top-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font: Regular Source Sans Pro;
+    font-size: 20px;
+    color: grey;
+    padding-left: 40px; }
+  .top-bar .search {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    color: grey;
+    font-size: 30px; }
+
+.search-pool {
+  width: 60%; }
+
+.actions-pool {
+  display: flex;
+  width: 40%; }
+  .actions-pool img {
+    margin-top: 5px;
+    height: 60px; }
+  .actions-pool button {
+    border: none;
+    width: 10%;
+    background: none;
+    outline: none; }
+    .actions-pool button:hover {
+      background: grey;
+      transition: 0.3s; }
+  .actions-pool i {
+    font-size: 30px;
+    color: #43425D; }
+  .actions-pool select {
+    border: none;
+    outline: none;
+    background: none;
+    color: #43425D; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+  background: #F0F0F7; }
+
+h1 {
+  font-size: 18px;
+  color: #4D4F5C;
+  font-weight: 300;
+  padding: 20px;
+  margin-left: -50px; }
+
+.calendar-block {
+  width: 90%;
+  background: white;
+  margin: auto; }
+  .calendar-block .container {
+    height: 90%;
+    width: 90%;
+    margin: auto; }
+
+tr {
+  height: 40px; }
+
+th {
+  vertical-align: middle !important;
+  text-transform: uppercase;
+  background-color: #f5f6fa;
+  color: grey; }
+
+.fc-right .fc-button-group {
+  margin-top: -100px; }
+
+.fc-day-number {
+  color: grey;
+  padding: 10px !important; }
+
+.fc-unthemed td.fc-today {
+  background-color: #f5f6fa !important; }
+
+.fc-content-skeleton td {
+  border-color: #ddd !important; }
+
+.fc-button {
+  width: 100px;
+  color: black !important;
+  font-size: 14px !important; }
+
+.fc-button-primary {
+  background-color: white !important; }
+
+.fc-button-primary:disabled {
+  color: #1d86fa !important;
+  border-color: #1d86fa !important;
+  background-color: white !important; }
+
+.fc-button:not(:disabled) {
+  color: #1d86fa !important;
+  border-color: #1d86fa !important; }
+
+#calendar {
+  max-width: 900px;
+  margin: 40px auto; }
+
+.popup {
+  z-index: 100;
+  position: absolute;
+  background: none; }
+
+.form {
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  padding: 50px 20px;
+  background: white; }
+
+.form i {
+  color: grey;
+  position: relative;
+  left: 90%;
+  top: -70%; }
+
+.form-actions {
+  display: flex;
+  justify-content: space-around; }
+
+.form-actions button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 30%;
+  height: 40px; }
+  .form-actions button:hover {
+    transition: 1s;
+    background-color: grey; }
+
+.form-delete {
+  color: red; }
+
+.form-close {
+  font-family: "Material Icons";
+  color: grey;
+  position: absolute;
+  font-size: 25px;
+  top: 5%;
+  left: 85%;
+  background: none;
+  border: none;
+  border-radius: 20px;
+  height: 30px;
+  width: 30px; }
+  .form-close:hover {
+    transition: 1s;
+    background-color: red; }
+
+.form input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px; }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/
