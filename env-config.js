@@ -1,5 +1,23 @@
-const prod = process.env.NODE_ENV === 'production'
+const withSass = require('@zeit/next-sass')
+const webpack = require('webpack')
 
-module.exports = {
-  'process.env.BACKEND_URL': prod ? '/CalendarApplication' : ''
-}
+const isProd = (process.env.NODE_ENV || 'production') === 'production'
+
+const assetPrefix = isProd ? '/your-repository-name' : ''
+
+module.exports = withSass({
+  exportPathMap: () => ({
+    '/': { page: '/' },
+    '/page1': { page: '/page1' },
+  }),
+  assetPrefix: assetPrefix,
+  webpack: config => {
+    config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
+      }),
+    )
+
+    return config
+  },
+})

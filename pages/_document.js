@@ -13,6 +13,22 @@ class MyDocument extends Document {
             rel="stylesheet"
           ></link>
           <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon"/>
+          <link
+            rel="stylesheet"
+            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/calendar.css`}
+          />
+          <link
+            rel="stylesheet"
+            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/global.css`}
+          />
+          <link
+            rel="stylesheet"
+            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/main.css`}
+          />
+          <link
+            rel="stylesheet"
+            href={`${this.props.__NEXT_DATA__.assetPrefix}/_next/static/popup.css`}
+          />
         </Head>
         <body >
           <Main />
