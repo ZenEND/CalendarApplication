@@ -1,0 +1,11 @@
+{
+    "presets": [
+      "next/babel"
+    ],
+    "plugins": [
+      "transform-object-rest-spread",
+      "transform-class-properties",
+      "transform-runtime",
+      ["transform-define", "./env-config.js"]
+    ]
+  }
